@@ -1,0 +1,43 @@
+{
+	"name": "test",
+	"version": "1.1.1",
+	"description": "dsfs",
+	"keywords": [
+		"dsfds"
+	],
+	"author": "fds",
+	"license": "MIT",
+	"dependencies": {
+		"bower": "^*",
+		"browser-sync": "^*",
+		"fs": "^*",
+		"gulp": "^*",
+		"gulp-angular-embed-templates": "^*",
+		"gulp-autoprefixer": "^*",
+		"gulp-clean-css": "^*",
+		"gulp-compass": "^*",
+		"gulp-concat": "^*",
+		"gulp-jshint": "^*",
+		"gulp-ng-annotate": "^*",
+		"gulp-notify": "^*",
+		"gulp-plumber": "^*",
+		"gulp-rename": "^*",
+		"gulp-sourcemaps": "^*",
+		"gulp-uglify": "^*",
+		"jshint": "^*",
+		"q": "^*"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"bower": "gulp bower",
+		"postinstall": "gulp install && bower install && gulp signaldone"
+	},
+	"bower": {
+		"angular": "latest",
+		"angular-loader": "latest",
+		"angular-resource": "latest",
+		"angular-route": "latest",
+		"angular-sanitize": "latest",
+		"angular-animate": "latest"
+	}
+}

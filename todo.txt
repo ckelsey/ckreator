@@ -1,0 +1,16 @@
+- Store selected project in localStorage
+	- if previously running, autostart it
+
+
+- new project
+	- Fields
+		- framework - update package bower
+		- modules - update package bower and dependencies
+		- server/api? - update package dependencies and add server folder/files
+
+	- handle if project already exists
+
+
+- List contents of project
+
+- Button to run npm install

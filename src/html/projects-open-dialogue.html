@@ -1,0 +1,13 @@
+<div ng-if="projectsApi.openProjectDialogueOpen === true" class="dialogue-wrapper">
+	<div class="dialogue-inner">
+		<h2>Open project</h2>
+
+		<div class="project-list">
+			<div ng-repeat="project in projectsApi.projects" class="project" ng-bind="project.name" ng-click="projectsApi.openProject(project)"></div>
+		</div>
+
+		<div class="input-wrapper">
+			<button ng-click="projectsApi.openProjectDialogueOpen = false;" class="circle"><i class="fa fa-close"></i></button>
+		</div>
+	</div>
+</div>

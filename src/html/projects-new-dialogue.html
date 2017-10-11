@@ -1,0 +1,48 @@
+<div ng-if="projectsApi.newProjectDialogueOpen === true" class="dialogue-wrapper">
+	<div class="dialogue-inner" ng-class="projectsApi.loadingMessage ? 'pulse' : ''">
+		<div ng-if="!projectsApi.loadingMessage">
+			<h2>New project</h2>
+
+			<div class="input-wrapper">
+				<label for="new-project-name">name</label>
+				<input id="new-project-name" type="text" ng-model="project.name" />
+			</div>
+
+			<div class="input-wrapper">
+				<label for="new-project-description">description</label>
+				<textarea id="new-project-description" ng-model="project.description"></textarea>
+			</div>
+
+			<div class="input-wrapper">
+				<label for="new-project-author">author</label>
+				<input id="new-project-author" type="text" ng-model="project.author" />
+			</div>
+
+			<div class="input-wrapper">
+				<label for="new-project-version">version</label>
+				<input id="new-project-version" type="text" ng-model="project.version" />
+			</div>
+
+			<div class="input-wrapper">
+				<label for="new-project-keywords">keywords</label>
+				<input id="new-project-keywords" type="text" ng-model="project.keywords" />
+			</div>
+
+			<div class="input-wrapper">
+				<label for="new-project-license">license</label>
+				<input id="new-project-license" type="text" ng-model="project.license" />
+			</div>
+
+			<!-- <div class="input-wrapper">
+				<label for="new-project-select-framework">select framework</label>
+				<select id="new-project-select-framework" ng-model="project.framework" ng-options="o as o for o in frameworks"></select>
+			</div> -->
+
+			<div class="input-wrapper">
+				<button ng-click="projectsApi.newProject(project)" class="circle"><i class="fa fa-check"></i></button>
+				<button ng-click="projectsApi.newProjectDialogueOpen = false;" class="circle"><i class="fa fa-close"></i></button>
+			</div>
+		</div>
+		<div ng-if="projectsApi.loadingMessage" ng-bind-html="projectsApi.loadingMessage"></div>
+	</div>
+</div>

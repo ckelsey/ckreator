@@ -1,0 +1,6 @@
+<div id="viewport">
+	<div ng-bind-html="projectsApi.project.name ? projectsApi.project.name + ' <i>'+ (projectsApi.project.running ? '- running' : '') +'</i>' : 'Select a project'" class="viewport-project-name"></div>
+	<div class="frame-wrapper">
+		<iframe ng-if="url" src="{{url}}" border="0" width="100%" height="100%"></iframe>
+	</div>
+</div>

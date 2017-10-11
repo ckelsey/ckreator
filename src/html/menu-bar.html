@@ -1,0 +1,8 @@
+<div id="menu-bar">
+	<div ng-repeat="(itemKey, item) in items" class="menu-item">
+		<div ng-bind="itemKey"></div>
+		<div ng-if="item.options" class="drop-down">
+			<div ng-repeat="(optionKey, option) in item.options" ng-bind="optionKey" ng-click="option()" class="menu-item"></div>
+		</div>
+	</div>
+</div>
